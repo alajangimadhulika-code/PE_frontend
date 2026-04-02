@@ -68,7 +68,8 @@ export const getAllStudents = async () => {
 };
 
 // Get eligible students
-export const getEligibleStudents = async () => {
+export const getEligibleStudents = async () => 
+{
   const response = await fetch(`${API_URL}/students/eligible`);
   if (!response.ok) {
     throw new Error(`Failed to fetch eligible students: ${response.statusText}`);
